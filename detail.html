@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>策安科技</title>
+    <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico">
+    <style>
+        *{
+            font-size:15px;
+        }
+        ul li{
+          list-style:none;
+        }
+    header{
+        width:100%;height:100px;background: #fff;
+    }
+    .head{
+        margin:0 auto;
+        width:1200px;
+        display:flex;
+        height:100px;
+        line-height: 100px;
+    }
+    .search{
+             height:44px;width:60px;
+             margin-left:15px;
+             background-color: rgba(187, 42, 23, 1);
+             width:80px;
+             color: #FFFFFF;
+             border-radius: 3px;
+             border-width: 0px;
+    }
+    .sea_login{
+        height:44px;width:60px;
+             margin-left:30px;
+             background-color: rgba(215, 215, 215, 1);
+             width:95px;
+             border-radius: 3px;
+             border-width: 0px;
+    }
+    .title{
+        font-family: '经典特宋简 Bold', '经典特宋简 Regular', '经典特宋简';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    color: #BA2A17;
+    margin-right:250px;
+    }
+    .sea_text{
+        width:300px;height:35px; border-color: rgba(228, 228, 228, 1); border-radius: 3px;
+        border-width: 1px;
+        border-color: rgba(228, 228, 228, 1);
+    }
+    main{
+        width:100%;
+        background: rgba(242, 242, 242, 1);
+    }
+    .content{margin:0 auto;
+        width:1200px;
+        display:flex;
+        padding-top:20px;
+    }
+    .aside_left{
+            width:900px; 
+            background:#fff;
+    }
+    .aside_right{
+         width:300px;
+         background:#fff;
+         margin-left:10px;
+    }
+    .fenlei li{
+         margin-left:20px;
+         color:#333;
+        font-weight: bold;
+        float:left;
+    }
+    .line{
+         width:100%;
+         border:2px solid #AA0022;
+    }
+    .suaix{
+         margin-left: 40px;
+         margin-top:20px;
+    }
+    .suaix span{
+        display:inline-block;
+        margin-left:20px;
+    }
+    .replay{
+        background: rgba(121, 121, 121, 1);color:#fff;border-radius:3px;
+        padding:3px;
+    }
+
+#t_list tr:nth-child(odd){background:rgb(246, 246, 246);}
+.search_div input{
+	border: 1px solid #DADADA;
+	color:#888;
+	height:25px;
+	line-height:25px;
+		
+}
+
+.leixing{
+    color: #797979;
+}
+.foot{
+    margin:0 auto;
+    text-align: center;
+    margin-top:40px;
+}
+.tw{
+    height:160px;
+    margin:0 auto;
+    text-align:center;
+    padding-top:30px;
+}
+.ytw{
+    height:390px;
+    margin-top:10px;
+}
+.rdwt{
+   height:460px;
+}
+.wytw{
+    background-color: rgba(186, 42, 23, 1);color:#fff;width:200px;height:40px;border:none;border-radius:3px;
+}
+.wdtw{
+  padding:0 10px;
+  display:flex;
+}
+
+.wdtw>p:nth-child(2){
+    margin-left:50px;
+}
+.clzt>span{
+margin-left:10px;
+}
+.question{
+  
+    padding-left: 10px;
+}
+.question>li{
+    font-size:14px;
+    border-bottom:1px solid #ccc;
+    padding: 10px;
+    margin-left:0px;
+}
+.quid{
+    background: #AEAEAE;color:#fff;border-radius:3px;padding:1px 5px;
+}
+.qu1{
+    font-weight:bold;
+    font-size:14px;
+}
+.qu2{
+  margin-top:10px;
+}
+.qu3{background:#31AD5A;color:#fff;border-radius:3px}
+.qu4{margin-left:20px}
+
+.rdwt_01{
+    margin-left:-20px;margin-top:-10px;font-weight:bold;
+}
+.rdwt_01>li{
+    border-bottom:1px solid #ccc;padding:10px 0;
+    font-size:13px!important;
+}
+.rdwt_01>li span{
+    background: #AEAEAE;padding:3px 6px;color:#fff;border-radius:3px;margin-right:15px;
+}
+.dqwz{
+
+font-weight: 400;
+font-style: normal;
+font-size: 14px;
+margin-left:40px;
+margin-top:30px;
+}
+.detail01{
+      width:820px;
+      border:1px solid #ccc;
+      margin:0 auto;
+      padding-left:20px;
+      padding-bottom:25px;
+}
+.detail02{
+     height:40px;line-height:40px; background-color: rgba(186, 42, 23, 1);
+     color:#fff;
+     font-weight:bold;
+     margin-left: -20px;
+     padding-left:20px;
+}
+.tsjy{
+border-radius:5px;
+padding:3px;
+border:1px solid #5E5E5E;
+width:60px;
+
+margin-top:20px;
+font-size:14px;
+color:#5E5E5E;
+}
+.detail03{
+font-weight:bold;
+    margin-top:15px;
+}
+.wtzj{
+  margin:0 auto;width:80px;height:30px;line-height:30px;border:1px solid #AA0022;color:#AA0022;text-align:center;border-radius:3px;margin-top:30px;
+  display:block;
+}
+.zjcontent{
+    border:1px solid #ccc;
+    margin:20px 25px 40px 25px;
+    display:none;
+}
+.tjwt{
+width:70px;height:27px;line-height:27px;background: #AA0022;text-align:center;color:#fff;font-size:14px;border-radius:3px;position:absolute;right:30px;top:7px;
+}
+.zysx{
+    border:1px solid #ccc;margin:30px 20px 0 20px;color: #868686;
+}
+    </style>
+</head>
+<body>
+<header>
+    <div class="head">
+           <div class="title">校园民意通</div>
+           <div><input type="text" placeholder="请输入查询问题的关键字或问题编号" class="sea_text"/></div>
+           <div><button class="search">搜索</button></div>
+           <div><button class="sea_login">登录</button></div>
+    </div>
+</header>
+<main>
+    <div class="content">
+        <div class="aside_left">
+                 <div class="fenlei" style="margin-left:0px;"><ul><li style="color:#AA0022;margin-left:0px">全部</li><li> 投诉举报</li><li>咨询建议</li><li>效能建设</li><li>其他事项</li><div style="clear:both"></div></ul></div>
+                 <div class="line"></div>
+     
+                 <p class="dqwz">您当前的位置：我要提问</p>
+                <div class="detail01">
+                          <div class="detail02" >编号：02314&nbsp;&nbsp;&nbsp;&nbsp;时间：2019.03.25</div>
+                          <div class="tsjy">投诉建议</div>
+                          <div class="detail03">问题：某某老师课外开辅导班</div>
+                          <p style="border-top:1px solid #ccc;margin-left:-20px"></p>
+                          <p >本人大四还有一星期考研，被校方通知要去打扫校园，停课一周，从早上7点到11点，下午两点到六点，本来应该是考试冲刺阶段，被安排成了打扫卫生。
+
+                                请问这是新的教育制度吗？这样做真的不会影响学生的就业和学习吗？
+                                
+                                第一，如果我现在低一届、我或许只会抱怨一下学校的教学制度
+                                
+                                第二，如果只是在早晨不耽误正常自习时间的情况下也可以接受，相当于劳动教育
+                                
+                                可是，对于已经打扫好卫生剩余时间不准离开，学校这样做真的可行吗？一天的时间浪费到扫把上，多数同学在扫过地后聊天、打牌、玩手机…一天安排的扫地时间缺乏合理性，没有有效利用</p>
+                                <p style="border:1px solid #AA0022;margin-left:-20px;margin-top:20px"></p>
+                                <div style="height:40px;line-height:40px;background-color: rgba(242, 242, 242, 1);margin-top:-15px;margin-left:-20px;">
+                                     <span style="margin-left:20px;font-weight:bold;">第一次回复</span><span style="margin-left:35px;"> 时间:2019.03.25</span>
+                                </div>
+                                <p >本人大四还有一星期考研，被校方通知要去打扫校园，停课一周，从早上7点到11点，下午两点到六点，本来应该是考试冲刺阶段，被安排成了打扫卫生。
+
+                                        请问这是新的教育制度吗？这样做真的不会影响学生的就业和学习吗？
+                                        
+                                        第一，如果我现在低一届、我或许只会抱怨一下学校的教学制度
+                                        
+                                        第二，如果只是在早晨不耽误正常自习时间的情况下也可以接受，相当于劳动教育
+                                        
+                                        可是，对于已经打扫好卫生剩余时间不准离开，学校这样做真的可行吗？一天的时间浪费到扫把上，多数同学在扫过地后聊天、打牌、玩手机…一天安排的扫地时间缺乏合理性，没有有效利用</p>
+                </div>
+                            <div class="wtzj" id="wt1"><span>问题追加</span></div>
+                            <div class="zjcontent" id="zj1">
+                                    <div style="height:30px;line-height:30px;background-color: rgba(242, 242, 242, 1);">
+                                            <span style="margin-left:20px;font-weight:bold;">问题追加</span>
+                                       </div>
+                                       <textarea cols="100" rows="10" style="border:none">
+                                       </textarea>
+                                       <div style="height:40px;background-color: rgba(242, 242, 242, 1);position:relative">
+                                             <div class="tjwt">提交问题</div>
+                                       </div>
+                            </div>
+                            <div class="zysx">
+                                <div style="padding:15px">
+                                <p style="margin-left:30px;">注意事项</p>
+                                <ol style="margin-top:-5px;"><li>请您填写与教育先关的诉求</li><li>请您填写与教育先关的诉求</li><li>请您填写与教育先关的诉求</li><li>请您填写与教育先关的诉求</li></ol>
+                                </div>
+                            </div>
+
+        </div>
+        <div class="aside_right">
+            <div class="tw">
+                <p>有关学校的问题，请在此提问</p>
+                <div><button class="wytw">我要提问</button></div>
+                <p>查看保密提问</p>
+            </div>
+            <p style="width:100%;height:10px;background: rgba(215, 215, 215, 1); "></p>
+            <div class="ytw">
+                <div class="wdtw">
+                 <p>我的提问</p>
+                 <p class="clzt"><span style="border-bottom:2px solid #BA2A17">全部</span><span>已处理</span><span>未处理</span></p>
+                 </div>
+                 <ul class="question">
+                     <li>
+                         <div ><span class="quid">23</span><span class="qu1">三年二班某某老师体罚学生，导致学生心理问题</span></div>
+                        <div class="qu2"><span class="qu3">已回复</span><span class="qu4">2019.03.30</span></div>
+                    </li>
+                     <li>
+                            <div ><span class="quid">23</span><span class="qu1">三年二班某某老师体罚学生，导致学生心理问题</span></div>
+                        <div class="qu2"><span class="qu3">已回复</span><span class="qu4">2019.03.30</span></div>
+                     </li>
+                     <li>
+                            <div ><span class="quid">23</span><span class="qu1">三年二班某某老师体罚学生，导致学生心理问题</span></div>
+                        <div class="qu2"><span class="qu3">已回复</span><span class="qu4">2019.03.30</span></div>
+                     </li>
+                 </ul>
+                 <div style="border:1px solid #ccc;padding:5px 10px;border-radius:3px;width:100px;margin:0 auto;margin-top:30px">查看更多提问</div>
+            </div>
+            <p style="width:100%;height:10px;background: rgba(215, 215, 215, 1); "></p>
+            <div class="rdwt">
+                    <p style="margin-top:30px;margin-left:20px;font-weight:bold">热门问题</p>
+                    <ul class="rdwt_01">
+                            　　 <li><span style="background:#F69B47">1</span>三年二班某某老师体罚学生，导致学生</li>
+                            　　 <li style="padding-top:0px"><span style="background:#F69B47">2</span>三年二班某某老师体罚学生，导致学生</li>
+                            　　 <li style="padding-top:0px"><span style="background:#F69B47">3</span>三年二班某某老师体罚学生，导致学生</li>
+                                 <li><span>4</span>三年二班某某老师体罚学生，导致学生</li>
+                                 <li><span>5</span>三年二班某某老师体罚学生，导致学生</li>
+                                 <li><span>6</span>三年二班某某老师体罚学生，导致学生</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+
+</main>
+<script>
+wt1.onclick=function(){
+    zj1.style.display="block";
+    wt1.style.display="none";
+}
+</script>
+</body></html>

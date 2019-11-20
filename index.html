@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>策安科技</title>
+    <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico">
+    <style>
+        ul li{
+          list-style:none;
+        }
+    header{
+        width:100%;height:100px;background: #fff;
+    }
+    .head{
+        margin:0 auto;
+        width:1200px;
+        display:flex;
+        height:100px;
+        line-height: 100px;
+    }
+    .search{
+             height:44px;width:60px;
+             margin-left:15px;
+             background-color: rgba(187, 42, 23, 1);
+             width:80px;
+             color: #FFFFFF;
+             border-radius: 3px;
+             border-width: 0px;
+    }
+    .sea_login{
+        height:44px;width:60px;
+             margin-left:30px;
+             background-color: rgba(215, 215, 215, 1);
+             width:95px;
+             border-radius: 3px;
+             border-width: 0px;
+    }
+    .title{
+        font-family: '经典特宋简 Bold', '经典特宋简 Regular', '经典特宋简';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    color: #BA2A17;
+    margin-right:250px;
+    }
+    .sea_text{
+        width:300px;height:35px; border-color: rgba(228, 228, 228, 1); border-radius: 3px;
+        border-width: 1px;
+        border-color: rgba(228, 228, 228, 1);
+    }
+    main{
+        width:100%;
+        background: rgba(242, 242, 242, 1);
+    }
+    .content{margin:0 auto;
+        width:1200px;
+        display:flex;
+        padding-top:20px;
+    }
+    .aside_left{
+            width:900px; 
+            background:#fff;
+    }
+    .aside_right{
+         width:300px;
+         background:#fff;
+         margin-left:10px;
+    }
+    .fenlei li{
+         margin-left:20px;
+         color:#333;
+        font-weight: bold;
+        font-size:15px;
+        float:left;
+    }
+    .line{
+         width:100%;
+         border:2px solid #AA0022;
+    }
+    .suaix{
+         margin-left: 40px;
+         font-size:15px;
+         margin-top:20px;
+    }
+    .suaix span{
+        display:inline-block;
+        margin-left:20px;
+    }
+    .replay{
+        background: rgba(121, 121, 121, 1);color:#fff;border-radius:3px;
+        padding:3px;
+    }
+
+    .th_c th{
+	text-align:center;
+	}
+#t_list{
+	font-size:16px;
+	margin:0 auto;
+	line-height:25px;
+	border:#e8e8e8 solid 1px;
+	 border-collapse: collapse;
+	}
+#t_list td{
+	border:0px;
+	padding-left:20px;
+	border:#e8e8e8 solid 1px;
+    text-align:center;
+    border: none;
+    padding:7px 0;
+	}
+    #t_list th{
+        color:#fff;
+        padding:8px 0;
+        font-size:15px;
+        border: none;
+        background:rgba(94, 94, 94, 1);
+    }
+#t_list tr:nth-child(odd){background:rgb(246, 246, 246);}
+.search_div input{
+	border: 1px solid #DADADA;
+	color:#888;
+	height:25px;
+	line-height:25px;
+		
+}
+.tb{
+    
+    margin:20px 40px 0 40px;
+}
+.leixing{
+    color: #797979;
+}
+.foot{
+    margin:0 auto;
+    text-align: center;
+    margin-top:40px;
+}
+.tw{
+    height:160px;
+    margin:0 auto;
+    text-align:center;
+    padding-top:30px;
+}
+.ytw{
+    height:390px;
+    margin-top:10px;
+}
+.rdwt{
+   height:460px;
+}
+.wytw{
+    background-color: rgba(186, 42, 23, 1);color:#fff;width:200px;height:40px;border:none;border-radius:3px;
+}
+.wdtw{
+  padding:0 10px;
+  display:flex;
+  font-size:15px;
+}
+
+.wdtw>p:nth-child(2){
+    margin-left:50px;
+}
+.clzt>span{
+margin-left:10px;
+}
+.question{
+  
+    padding-left: 10px;
+}
+.question>li{
+    font-size:14px;
+    border-bottom:1px solid #ccc;
+    padding: 10px;
+    margin-left:0px;
+}
+.quid{
+    background: #AEAEAE;color:#fff;border-radius:3px;padding:1px 5px;
+}
+.qu1{
+    font-weight:bold;
+}
+.qu2{
+  margin-top:10px;
+}
+.qu3{background:#31AD5A;color:#fff;border-radius:3px}
+.qu4{margin-left:20px}
+
+.rdwt_01{
+    margin-left:-20px;margin-top:-10px;font-size:14px;font-weight:bold;
+}
+.rdwt_01>li{
+    border-bottom:1px solid #ccc;padding:10px 0;
+}
+.rdwt_01>li span{
+    background: #AEAEAE;padding:3px 6px;color:#fff;border-radius:3px;margin-right:15px;
+}
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="head">
+           <div class="title">校园民意通</div>
+           <div><input type="text" placeholder="请输入查询问题的关键字或问题编号" class="sea_text"/></div>
+           <div><button class="search">搜索</button></div>
+           <div><button class="sea_login">登录</button></div>
+    </div>
+</header>
+<main>
+    <div class="content">
+        <div class="aside_left">
+                 <div class="fenlei" style="margin-left:0px;"><ul><li style="color:#AA0022;margin-left:0px">全部</li><li> 投诉举报</li><li>咨询建议</li><li>效能建设</li><li>其他事项</li><div style="clear:both"></div></ul></div>
+                 <div class="line"></div>
+                 <div class="suaix"><span style="margin-left:0">筛选</span><span class="replay">全部回复</span><span>已回复</span><span>正在问</span></div>
+                 <div class="tb"><table id="t_list" width="100%" border="1" cellspacing="0" cellpadding="0">
+                        <tr class="th_c">
+                          <th>编号</th>
+                          <th>类型</th>
+                          <th style="width:35%">标题</th>
+                          <th style="width:25%">提交时间</th>
+                          <th>处理情况</th>
+                        </tr>
+                          
+    <tr>
+            <td>23</td>
+            <td class="leixing">效能建设</td>
+            <td><a href="detail.html">嵛景华城交房3个月</a></td>
+            <td class="leixing">2019-04-03</td>
+            <td style="color:#009933;">已回复</td>
+          </tr>
+          <tr>
+                <td>23</td>
+                <td class="leixing">效能建设</td>
+                <td><a href="detail.html">嵛景华城交房3个月</a></td>
+                <td class="leixing">2019-04-03</td>
+                <td >已回复</td>
+              </tr>
+
+              <tr>
+                    <td>23</td>
+                    <td class="leixing">效能建设</td>
+                    <td><a href="detail.html">嵛景华城交房3个月</a></td>
+                    <td class="leixing">2019-04-03</td>
+                    <td style="color:#009933;">已回复</td>
+                  </tr>
+                  <tr>
+                        <td>23</td>
+                        <td class="leixing">效能建设</td>
+                        <td><a href="detail.html">嵛景华城交房3个月</a></td>
+                        <td class="leixing">2019-04-03</td>
+                        <td >已回复</td>
+                      </tr>
+          
+                        </table>
+                        </div>
+
+               
+
+                        <div class="foot">
+                            <p>共 366 条记录  共16页</p>
+                            <p style="color:#fff;background: #BA2A17;width: 20px;text-align: center;margin:0 auto">1</p>
+                        </div>
+        </div>
+        <div class="aside_right">
+            <div class="tw">
+                <p>有关学校的问题，请在此提问</p>
+                <div><a href="wytw.html"><button class="wytw">我要提问</button></a></div>
+                <p>查看保密提问</p>
+            </div>
+            <p style="width:100%;height:10px;background: rgba(215, 215, 215, 1); "></p>
+            <div class="ytw">
+                <div class="wdtw">
+                 <p>我的提问</p>
+                 <p class="clzt"><span style="border-bottom:2px solid #BA2A17">全部</span><span>已处理</span><span>未处理</span></p>
+                 </div>
+                 <ul class="question">
+                     <li>
+                         <div ><span class="quid">23</span><span class="qu1">三年二班某某老师体罚学生，导致学生心理问题</span></div>
+                        <div class="qu2"><span class="qu3">已回复</span><span class="qu4">2019.03.30</span></div>
+                    </li>
+                     <li>
+                            <div ><span class="quid">23</span><span class="qu1">三年二班某某老师体罚学生，导致学生心理问题</span></div>
+                        <div class="qu2"><span class="qu3">已回复</span><span class="qu4">2019.03.30</span></div>
+                     </li>
+                     <li>
+                            <div ><span class="quid">23</span><span class="qu1">三年二班某某老师体罚学生，导致学生心理问题</span></div>
+                        <div class="qu2"><span class="qu3">已回复</span><span class="qu4">2019.03.30</span></div>
+                     </li>
+                 </ul>
+                 <div style="border:1px solid #ccc;padding:5px 10px;border-radius:3px;width:100px;margin:0 auto;font-size:15px;margin-top:30px">查看更多提问</div>
+            </div>
+            <p style="width:100%;height:10px;background: rgba(215, 215, 215, 1); "></p>
+            <div class="rdwt">
+                    <p style="margin-top:30px;margin-left:20px;font-size:15px;font-weight:bold">热门问题</p>
+                    <ul class="rdwt_01">
+                            　　 <li><span style="background:#F69B47">1</span>三年二班某某老师体罚学生，导致学生</li>
+                            　　 <li style="padding-top:0px"><span style="background:#F69B47">2</span>三年二班某某老师体罚学生，导致学生</li>
+                            　　 <li style="padding-top:0px"><span style="background:#F69B47">3</span>三年二班某某老师体罚学生，导致学生</li>
+                                 <li><span>4</span>三年二班某某老师体罚学生，导致学生</li>
+                                 <li><span>5</span>三年二班某某老师体罚学生，导致学生</li>
+                                 <li><span>6</span>三年二班某某老师体罚学生，导致学生</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+</body></html>
